@@ -6,7 +6,10 @@ import { Outlet } from "react-router-dom";
 export default function HomeLayout() {
   return (
     <div className="main_layout_container">
-      <Header />
+      <div className="layout_header">
+        <Header />
+      </div>
+
       <NavBar />
       <div className="main_layout_body">
         <Outlet />
