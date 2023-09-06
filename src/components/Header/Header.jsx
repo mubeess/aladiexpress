@@ -1,5 +1,9 @@
 import React from "react";
-
+import styled from "styled-components";
 export default function Header() {
-  return <h2>Header</h2>;
+  const StyledHader = styled.div`
+    background-color: var(--white);
+    height: 150px;
+  `;
+  return <StyledHader></StyledHader>;
 }
