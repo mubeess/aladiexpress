@@ -6,13 +6,7 @@ import { Outlet } from "react-router-dom";
 export default function HomeLayout() {
   return (
     <div className="main_layout_container">
-      <div
-        style={{
-          padding: 20,
-          paddingLeft: 100,
-          paddingRight: 100,
-        }}
-      >
+      <div className="layout_header">
         <Header />
       </div>
 
