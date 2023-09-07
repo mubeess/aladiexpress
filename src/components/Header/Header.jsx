@@ -4,9 +4,11 @@ import IconButton from "../IconButton/IconButton";
 import CartHolder from "../CartHolder/CartHolder";
 import { Dropdown, Input } from "antd";
 import {
+  CloseCircleOutlined,
   DownOutlined,
   HeartOutlined,
   HomeOutlined,
+  MenuOutlined,
   SearchOutlined,
 } from "@ant-design/icons";
 
@@ -15,7 +17,7 @@ const items = [
   { label: "Sample Saampleee", key: 2 },
   { label: "Sample samplek samplee", key: 3 },
 ];
-export default function Header() {
+export default function Header({ toggleMenu, isToggled }) {
   const StyledHader = styled.div`
     background-color: var(--white);
     height: 50px;
@@ -40,6 +42,9 @@ export default function Header() {
         justify-content: space-between;
         align-items: center;
         margin-left: 20px;
+        .phone-menu {
+          display: none;
+        }
       }
       .search-placeholder {
         width: 75%;
@@ -98,6 +103,9 @@ export default function Header() {
         flex-direction: column;
         .header_icon_group {
           width: 100%;
+          .phone-menu {
+            display: block;
+          }
         }
         .search-placeholder {
           width: 100%;
@@ -144,6 +152,11 @@ export default function Header() {
             label="0"
           />
           <CartHolder />
+          {isToggled ? (
+            <CloseCircleOutlined className="phone-menu" onClick={toggleMenu} />
+          ) : (
+            <MenuOutlined className="phone-menu" onClick={toggleMenu} />
+          )}
         </div>
       </div>
     </StyledHader>
