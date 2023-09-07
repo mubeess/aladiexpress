@@ -19,11 +19,17 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  margin-top: 1.5rem;
 }
 .layout_header {
   padding: 20px;
   padding-left: 100px;
   padding-right: 100px;
+}
+.ant-collapse {
+  display: none !important;
+  background: #fff;
+  border: none;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -32,4 +38,26 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+@media only screen and (max-width: 998px){
+  .nav-container{
+    background: #fff;
+  }
+  .nav-container p{
+    display: none;
+  }
+  .ant-collapse{
+    width: 100%;
+    display: block !important;
+  }
+  .nav-container .menu-items{
+    display: none;
+  }
+  .ant-collapse-content {
+    border: none !important;
+  }
+  .ant-collapse-item {
+    border: none !important;
+  }
+ 
 }
