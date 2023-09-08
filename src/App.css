@@ -31,6 +31,11 @@
   background: #fff;
   border: none;
 }
+.ant-collapse.categories_menu {
+  width: 100%;
+  display: block !important;
+  background-color: #fff;
+}
 
 @media only screen and (max-width: 1200px) {
   .layout_header {
