@@ -50,7 +50,7 @@ export default function Home() {
       grid-column: 2/4;
       width: 100%;
       height: 50vh;
-      background-color: green;
+      background-color: #ffff;
       overflow: hidden;
     }
     .home-images {
@@ -67,6 +67,46 @@ export default function Home() {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 40px;
       margin-top: 40px;
+    }
+    @media screen and (max-width: 1120px) {
+      padding: 10px;
+      .hero_section {
+        grid-template-columns: 1fr;
+        gap: 0px;
+      }
+      .other_item-cards {
+        margin: 0 auto;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        overflow-y: hidden;
+        /* overflow: hidden; */
+      }
+
+      .categories {
+        display: none;
+      }
+      .home-carousel {
+        grid-column: 1/2;
+        width: 100%;
+        height: 50vh;
+
+        overflow: hidden;
+      }
+      .home-images {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 580px) {
+      .home-carousel {
+        height: 30vh;
+      }
     }
   `;
 

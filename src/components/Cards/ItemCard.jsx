@@ -12,6 +12,13 @@ export default function ItemCard() {
     h3 {
       width: 80%;
     }
+
+    @media screen and (max-width: 1120px) {
+      min-width: 350px;
+      margin: 10px 0px;
+      padding: 10px;
+      height: 40vh;
+    }
   `;
   return (
     <StyledCard>
