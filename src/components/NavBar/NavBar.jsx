@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { Collapse, Menu } from "antd";
 import { MenuItems } from "../../utils/contant";
-export default function NavBar() {
-  const [viewMenu, setViewMenu] = useState(!true);
-
+export default function NavBar({ viewMenu = false }) {
   const MenuMobileItems = [
     {
       key: "1",
@@ -15,12 +13,8 @@ export default function NavBar() {
     },
   ];
 
-  const toggleCollapse = () => {
-    setViewMenu(!viewMenu);
-  };
   return (
     <div className="nav-container">
-      <button onClick={toggleCollapse}>View</button>
       <Collapse
         defaultActiveKey={["1"]}
         activeKey={viewMenu ? ["1"] : []}

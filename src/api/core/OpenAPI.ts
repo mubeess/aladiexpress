@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 export const OpenAPI = {
-  BASE: "https://api.safsims.com",
+  BASE: "",
   VERSION: "1.0",
   WITH_CREDENTIALS: false,
   CREDENTIALS: "include",
