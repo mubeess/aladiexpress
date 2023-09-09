@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import NavBar from "../../components/NavBar/NavBar";
 import { Outlet } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import Card from "../../components/Card/Card";
 
 export default function HomeLayout() {
   const [viewMenu, setViewMenu] = useState(false);
@@ -20,7 +21,8 @@ export default function HomeLayout() {
         <Outlet />
       </div>
       <div>
-        <Footer />
+        {/* <Footer /> */}
+        <Card />
       </div>
     </div>
   );
