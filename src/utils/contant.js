@@ -275,3 +275,119 @@ export const MenuItems = [
     // onMouseLeave: () => setIsPagesSubMenuVisible(false),
   },
 ];
+
+export const CategoriesItems = [
+  {
+    label: "Home",
+    key: "home",
+    children: [
+      {
+        type: "group",
+        children: [
+          {
+            label: "Home One",
+            key: "home:1",
+            onClick: () => {
+              console.log("home clicked");
+            },
+          },
+          {
+            label: "Home Two",
+            key: "home:2",
+          },
+          {
+            label: "Home Three",
+            key: "home:3",
+          },
+          {
+            label: "Home Four",
+            key: "home:4",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Blog",
+    key: "SubMenu",
+    children: [
+      {
+        type: "group",
+        children: [
+          {
+            label: "Blog Grid View",
+            key: "blog:1",
+            children: [
+              {
+                label: "Blog 2 Column",
+                key: "blog1:1",
+              },
+              {
+                label: "Blog 3 column",
+                key: "blog1:2",
+              },
+              {
+                label: "Grid Left sidebar",
+                key: "blog1:3",
+              },
+              {
+                label: "Grid Right sidebar",
+                key: "blog1:4",
+              },
+            ],
+          },
+          {
+            label: "Blog List View",
+            key: "blog:2",
+            children: [
+              {
+                label: "Blog List",
+                key: "blog2:1",
+              },
+              {
+                label: "List Left Sidebar",
+                key: "blog2:2",
+              },
+              {
+                label: "List Right Sidebar",
+                key: "blog2:3",
+              },
+            ],
+          },
+          {
+            label: "Blog Details",
+            key: "blog:3",
+            children: [
+              {
+                label: "List Left Sidebar",
+                key: "blog3:1",
+              },
+              {
+                label: "List Right Sidebar",
+                key: "blog3:2",
+              },
+            ],
+          },
+          {
+            label: "Blog Format",
+            key: "blog:4",
+            children: [
+              {
+                label: "Blog Audio Format",
+                key: "blog4:1",
+              },
+              {
+                label: "Blog Video Format",
+                key: "blog4:2",
+              },
+              {
+                label: "Galllery Video Format",
+                key: "blog4:3",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];

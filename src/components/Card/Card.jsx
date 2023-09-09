@@ -1,4 +1,4 @@
-import { HeartOutlined } from "@ant-design/icons";
+import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { styled } from "styled-components";
 import { motion } from "framer-motion";
@@ -14,7 +14,9 @@ function Card() {
         </div>
         <div className="details">
           <div>
-            <p className="item-price">NGN 230,000</p>
+            <p className="item-price">
+              <strong> NGN 230,000 </strong>
+            </p>
             <p className="item-name">Flames 2000 Watts</p>
             <p className="item-info">Monocrystalline Solar Panel</p>
             <p className="item-description">
@@ -24,9 +26,11 @@ function Card() {
           </div>
           <motion.div
             initial={{ y: 0, opacity: 0 }}
-            animate={{ y: isHovered ? 15 : 0, opacity: isHovered ? 1 : 0 }}>
+            animate={{ y: isHovered ? 5 : 0, opacity: isHovered ? 1 : 0 }}>
             <div className="btn-cont">
-              <button className="add">Add to cart</button>
+              <button className="add">
+                Add to cart <ShoppingCartOutlined />
+              </button>
               <button className="favourite">
                 <HeartOutlined />{" "}
               </button>
@@ -44,29 +48,31 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   background: #ffffff;
-  border: none;
+  border: 1px solid #f1f1f1;
   border-radius: 5px;
-  width: 225px;
+  max-width: 225px;
+  min-width: 225px;
   padding: 10px;
-  height: 300px; /* Default height */
+  height: 340px;
   transition: height 0.3s ease; /* Add a smooth transition for the height change */
 
   &:hover {
-    height: 315px; /* Height on hover */
+    height: 355px; /* Height on hover */
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   }
   .img {
   }
   .details {
-    height: 45px;
+    text-align: justify;
   }
   .details div p {
-    line-height: 1em;
+    /* line-height: 1em; */
   }
   .details .item-name {
     /* background: red; */
     margin: 0;
     padding: 0;
+    font-size: 0.85em;
   }
   .details .item-price {
     font-weight: bolder;
@@ -75,6 +81,7 @@ const CardContainer = styled.div`
   }
   .details .item-info {
     margin: 0;
+    font-size: 0.85em;
     padding: 0;
   }
   .details .item-description {
@@ -82,7 +89,8 @@ const CardContainer = styled.div`
     color: #b7b7b7;
   }
   .btn-cont {
-    margin-top: -20px;
+    margin-top: -10px;
+    width: 100%;
   }
   .btn-cont button {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
