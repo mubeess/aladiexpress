@@ -1,17 +1,80 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import HomeCarousel from "./components/HomeCarousel";
 import ItemCard from "../../components/Cards/ItemCard";
-import {
-  AppstoreOutlined,
-  DownOutlined,
-  HomeOutlined,
-} from "@ant-design/icons";
+import { AppstoreOutlined, DownOutlined } from "@ant-design/icons";
 import { Collapse, Menu } from "antd";
-import { CategoriesItems, MenuItems } from "../../utils/contant";
+import { CategoriesItems } from "../../utils/contant";
+import HorizontalList from "../../components/Horizontal/HorizontalList";
 
 export default function Home() {
   const [categoryToggled, setCategoryToggled] = useState(true);
+
+  let datas = [
+    {
+      id: 1,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+    {
+      id: 2,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+    {
+      id: 3,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+    {
+      id: 4,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+    {
+      id: 5,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+    {
+      id: 6,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+    {
+      id: 7,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+    {
+      id: 8,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+    {
+      id: 9,
+      title: "Home",
+      price: "300",
+      description: "Home component",
+      info: "information",
+    },
+  ];
 
   const toggleCategory = () => {
     setCategoryToggled((prev) => !prev);
@@ -158,6 +221,16 @@ export default function Home() {
         <ItemCard />
         <ItemCard />
         <ItemCard />
+      </div>
+
+      <div>
+        <HorizontalList data={datas} name={"Trending Products"} />
+      </div>
+      <div>
+        <HorizontalList data={datas} name={"New Products"} />
+      </div>
+      <div>
+        <HorizontalList data={datas} name={"All Products"} />
       </div>
     </StyledHomeContainer>
   );
