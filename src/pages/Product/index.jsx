@@ -215,6 +215,26 @@ const ProductCont = styled.div`
   .box-three div {
     margin: 5px;
   }
+
+  @media screen and (max-width: 915px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    .box-one {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      margin: auto;
+    }
+    .box-two {
+      grid-row: 2/3;
+      grid-column: 1/3;
+    }
+    .box-three {
+      grid-row: 3/4;
+      grid-column: 1/3;
+      justify-content: center;
+    }
+  }
 `;
 
 const CustomeSelect = styled(Select)`
