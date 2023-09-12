@@ -99,7 +99,7 @@ function ProductDetails() {
                 { value: "disabled", label: "Disabled", disabled: true },
               ]}
             />
-            <div>
+            <div className="buttons">
               <button>-</button>
               <button>1</button>
               <button>+</button>
@@ -182,7 +182,7 @@ const ProductCont = styled.div`
   .sub-img div {
     padding: 10px;
     height: 70%;
-    width: 8em;
+    width: 60px;
     border-radius: 5px;
     border: 1px solid var(--border);
   }
@@ -215,7 +215,7 @@ const ProductCont = styled.div`
   }
   .addBtn {
     background: var(--yellow);
-    width: 50%;
+    width: 48%;
     border: none;
     margin: 8px 0px;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -229,6 +229,20 @@ const ProductCont = styled.div`
     border: 1px solid lightgray;
     border-radius: 5px;
     margin: 5px 0px;
+  }
+  .buttons button {
+    margin: 0px 4px;
+  }
+  @media screen and (max-width: 915px) {
+    .product-img {
+      grid-column: 1/3;
+    }
+    .product-details {
+      grid-column: 1/3;
+    }
+    .addWish {
+      width: 35%;
+    }
   }
 `;
 
