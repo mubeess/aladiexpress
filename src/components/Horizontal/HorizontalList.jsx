@@ -30,6 +30,7 @@ const Container = styled.div`
   height: 60vh;
   margin-top: 20px;
   margin-bottom: 20px;
+
   /* background: red; */
   .header {
     display: flex;
@@ -41,7 +42,7 @@ const Container = styled.div`
   }
   .header button {
     background: none;
-    border-radius: 100px;
+    border-radius: 5px;
     padding: 10px;
     width: 100px;
     border: 1px solid #f1f1f1f1;

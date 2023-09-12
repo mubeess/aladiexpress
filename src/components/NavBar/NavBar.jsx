@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Collapse, Menu } from "antd";
 import { MenuItems } from "../../utils/contant";
