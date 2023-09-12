@@ -2,13 +2,15 @@ import React from "react";
 import Card from "../Card/Card";
 import styled from "styled-components";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 
 function HorizontalList({ name, data }) {
+  const navigate = useNavigate();
   return (
     <Container>
       <div className="header">
         <p className="name">{name}</p>
-        <button>
+        <button onClick={() => navigate("/product")}>
           View All <ArrowRightOutlined />
         </button>
       </div>
@@ -24,9 +26,11 @@ function HorizontalList({ name, data }) {
 export default HorizontalList;
 
 const Container = styled.div`
-  padding: 10px 10px;
+  padding: 10px;
   height: 60vh;
-  margin: 15px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
   /* background: red; */
   .header {
     display: flex;

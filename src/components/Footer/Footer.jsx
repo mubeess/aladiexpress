@@ -107,12 +107,7 @@ function Footer() {
         </div>
       </div>
       <div className="box-five">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          unde tenetur consequuntur, mollitia, error molestias harum assumenda
-          porro delectus sit vel fugit quasi quis sint at dolor quibusdam qui
-          odit?
-        </p>
+        <p>2023 (C) All Rights Reserved</p>
 
         <div className="icons">
           <div>
@@ -137,8 +132,9 @@ const FooterContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 5px;
-  background: #f7f7f7;
+  background: #05070b;
   padding-top: 40px;
+  color: #fff;
   div {
     padding: 0px 0.5rem;
   }
@@ -162,9 +158,11 @@ const FooterContainer = styled.div`
     grid-column: span 4; /* This will make .box-five span three columns */
     text-align: center;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 100px;
+    background-color: #0b1019;
+    margin-top: auto;
   }
   .icons {
     display: flex;

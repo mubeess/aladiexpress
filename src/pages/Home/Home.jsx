@@ -6,6 +6,7 @@ import { AppstoreOutlined, DownOutlined } from "@ant-design/icons";
 import { Collapse, Menu } from "antd";
 import { CategoriesItems } from "../../utils/contant";
 import HorizontalList from "../../components/Horizontal/HorizontalList";
+import FeaturedCard from "../../components/Cards/FeaturedCard";
 
 export default function Home() {
   const [categoryToggled, setCategoryToggled] = useState(true);
@@ -127,7 +128,7 @@ export default function Home() {
     .other_item-cards {
       height: 30vh;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 40px;
       margin-top: 40px;
     }
@@ -168,7 +169,7 @@ export default function Home() {
 
     @media screen and (max-width: 580px) {
       .home-carousel {
-        height: 30vh;
+        height: 40vh;
       }
     }
   `;
@@ -218,9 +219,10 @@ export default function Home() {
       </div>
 
       <div className="other_item-cards">
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
+        <FeaturedCard />
+        <FeaturedCard />
+        <FeaturedCard />
+        <FeaturedCard />
       </div>
 
       <div>
