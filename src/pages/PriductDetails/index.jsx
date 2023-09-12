@@ -171,7 +171,7 @@ const ProductCont = styled.div`
   grid-template-rows: repeat(2, auto);
   gap: 1em;
   height: 100%;
-  padding: 0.8em;
+  padding: 1em;
 
   .sub-img {
     display: flex;
