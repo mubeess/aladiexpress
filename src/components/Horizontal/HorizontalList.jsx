@@ -24,8 +24,9 @@ function HorizontalList({ name, data }) {
 export default HorizontalList;
 
 const Container = styled.div`
-  padding: 10px;
-  height: 50vh;
+  padding: 10px 10px;
+  height: 60vh;
+  margin: 15px 0px;
   /* background: red; */
   .header {
     display: flex;
@@ -37,10 +38,11 @@ const Container = styled.div`
   }
   .header button {
     background: none;
-    border-radius: 100px;
+    border-radius: 5px;
     padding: 10px;
     width: 100px;
     border: 1px solid #f1f1f1f1;
+    cursor: pointer;
   }
   .list {
     margin: 0 auto;
