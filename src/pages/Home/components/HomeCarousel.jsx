@@ -57,6 +57,14 @@ export default function HomeCarousel() {
     .right-icon:hover {
       color: var(--yellow);
     }
+    @media screen and (max-width: 580px) {
+      .home-carousel {
+        height: 40vh;
+      }
+      .main-carousel {
+        height: 40vh;
+      }
+    }
   `;
 
   const handleNext = () => {
