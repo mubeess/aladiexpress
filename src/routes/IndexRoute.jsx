@@ -5,7 +5,6 @@ import HomeLayout from "../pages/Layouts/HomeLayout";
 import Product from "../pages/Product";
 import Cart from "../pages/Cart/Cart";
 import ProductDetails from "../pages/PriductDetails";
-import ProductDetails from "../pages/PriductDetails";
 
 export default function IndexRoute() {
   return (
