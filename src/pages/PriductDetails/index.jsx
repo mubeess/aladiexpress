@@ -182,9 +182,10 @@ const ProductCont = styled.div`
   .sub-img div {
     padding: 10px;
     height: 70%;
-    width: 60px;
+    width: 75%;
     border-radius: 5px;
     border: 1px solid var(--border);
+    margin: 5px;
   }
   .product-details {
     /* background: blue; */
