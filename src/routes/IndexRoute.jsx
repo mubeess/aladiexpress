@@ -6,6 +6,8 @@ import Product from "../pages/Product";
 import Cart from "../pages/Cart/Cart";
 import ProductDetails from "../pages/PriductDetails";
 import Checkout from "../pages/Checkout/Checkout";
+import Register from "../pages/Register/index";
+import Login from "../pages/Login";
 
 export default function IndexRoute() {
   return (
@@ -16,6 +18,8 @@ export default function IndexRoute() {
         <Route path="/details" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Route>
     </Routes>
   );

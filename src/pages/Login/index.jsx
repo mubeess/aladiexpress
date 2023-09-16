@@ -3,7 +3,7 @@ import Input from "../../components/Input/Input";
 import styled from "styled-components";
 import { Select } from "antd";
 
-function Login() {
+export default function Login() {
   return (
     <FormCont>
       <div className="header">
@@ -36,8 +36,6 @@ function Login() {
     </FormCont>
   );
 }
-
-export default Login;
 
 const FormCont = styled.div`
   padding: 70px 20px;
