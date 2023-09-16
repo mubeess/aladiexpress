@@ -1,3 +1,37 @@
+{
+  /* <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Solar panel</a>
+          </li>
+          <li>
+            <a href="">Battery</a>
+          </li>
+          <li>
+            <a href="">Inverter</a>
+          </li>
+          <li>
+            <a href="">Street light</a>
+          </li>
+          <li>
+            <a href="">Accesories</a>
+          </li>
+          <li>
+            <a href="">Donate</a>
+          </li>
+          <li>
+            <a href="">Become an Installer</a>
+          </li>
+          <li>
+            <a href="">Become a seller</a>
+          </li>
+          <li>
+            <a href="">Solar need calculator</a>
+          </li>
+        </ul> */
+}
 export const MenuItems = [
   {
     label: "Home",
@@ -30,7 +64,7 @@ export const MenuItems = [
     ],
   },
   {
-    label: "Shop",
+    label: "Solar panel",
     key: "app",
     children: [
       {
@@ -98,7 +132,7 @@ export const MenuItems = [
     // onMouseLeave: () => setShopSubMenuVisible(false),
   },
   {
-    label: "Blog",
+    label: "Battery",
     key: "SubMenu",
     children: [
       {
@@ -181,7 +215,7 @@ export const MenuItems = [
     ],
   },
   {
-    label: "Pages",
+    label: "Inverter",
     key: "alipay",
     children: [
       {
@@ -273,6 +307,30 @@ export const MenuItems = [
     ],
     // onMouseEnter: () => setIsPagesSubMenuVisible(true),
     // onMouseLeave: () => setIsPagesSubMenuVisible(false),
+  },
+  {
+    label: "Street light",
+    key: "streetLight",
+  },
+  {
+    label: "Accesories",
+    key: "accesories",
+  },
+  {
+    label: "Donate",
+    key: "donate",
+  },
+  {
+    label: "Become an Installer",
+    key: "becomeAnInstaller",
+  },
+  {
+    label: "Become a seller",
+    key: "becomeAnSeller",
+  },
+  {
+    label: "Solar need calculator",
+    key: "solarNeedCalculator",
   },
 ];
 

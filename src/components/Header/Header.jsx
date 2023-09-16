@@ -25,7 +25,7 @@ export default function Header({ toggleMenu, isToggled }) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin: 20px auto;
     .logo {
       width: 20%;
     }

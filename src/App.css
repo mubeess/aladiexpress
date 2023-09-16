@@ -36,7 +36,10 @@
   display: block !important;
   background-color: #fff;
 }
-
+.ant-menu-overflow {
+  border: none;
+  border-radius: 5px;
+}
 @media only screen and (max-width: 1200px) {
   .layout_header {
     padding: 20px;
@@ -65,3 +68,4 @@
     border: none !important;
   }
 }
+
