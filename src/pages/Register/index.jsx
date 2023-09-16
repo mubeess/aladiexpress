@@ -3,7 +3,7 @@ import Input from "../../components/Input/Input";
 import styled from "styled-components";
 import { Select } from "antd";
 
-function Register() {
+export default function Register() {
   return (
     <FormCont>
       <div className="header">
@@ -89,10 +89,12 @@ function Register() {
   );
 }
 
-export default Register;
-
 const FormCont = styled.div`
   padding: 70px 20px;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    margin: auto;
+  }
   .header {
     font-size: larger;
     margin: 0;
