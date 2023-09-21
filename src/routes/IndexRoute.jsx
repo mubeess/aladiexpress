@@ -1,13 +1,13 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home/Home";
-import HomeLayout from "../pages/Layouts/HomeLayout";
-import Product from "../pages/Product";
-import Cart from "../pages/Cart/Cart";
-import ProductDetails from "../pages/PriductDetails";
-import Checkout from "../pages/Checkout/Checkout";
-import Register from "../pages/Register/index";
-import Login from "../pages/Login";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home/Home';
+import HomeLayout from '../pages/Layouts/HomeLayout';
+import Product from '../pages/Product';
+import Cart from '../pages/Cart/Cart';
+import ProductDetails from '../pages/PriductDetails';
+import Checkout from '../pages/Checkout/Checkout';
+import Register from '../pages/Register/index';
+import Login from '../pages/Login';
 
 export default function IndexRoute() {
   return (

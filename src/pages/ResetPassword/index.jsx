@@ -1,9 +1,9 @@
-import React from "react";
-import Input from "../../components/Input/Input";
-import styled from "styled-components";
-import { Select } from "antd";
-import { ArrowLeftOutlined } from "@ant-design/icons";
-import SuccessCard from "../../components/SuccessCard";
+import React from 'react';
+import Input from '../../components/Input/Input';
+import styled from 'styled-components';
+import { Select } from 'antd';
+import { ArrowLeftOutlined } from '@ant-design/icons';
+import SuccessCard from '../../components/SuccessCard';
 
 function ResetPassword() {
   return (
