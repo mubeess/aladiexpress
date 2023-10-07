@@ -40,6 +40,10 @@
   border: none;
   border-radius: 5px;
 }
+.ant-drawer-body {
+  padding: 0 !important;
+  /* width: 300px !important; */
+}
 @media only screen and (max-width: 1200px) {
   .layout_header {
     padding: 20px;
@@ -68,4 +72,3 @@
     border: none !important;
   }
 }
-

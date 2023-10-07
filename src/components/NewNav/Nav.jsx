@@ -26,7 +26,8 @@ function Nav({ viewMenu = !false, toggleMenu }) {
         title=""
         placement="left"
         onClose={toggleMenu}
-        open={viewMenu}>
+        open={viewMenu}
+      >
         <img src="logo.jpeg" />
         <Collapse
           ghost

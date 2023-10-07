@@ -9,6 +9,7 @@ import Register from "../pages/Register/index";
 import Login from "../pages/Login";
 import Index from "../pages/Index/Index";
 import Product from "../pages/Product/index";
+import SellerRoute from "./sellerRoute";
 export default function IndexRoute() {
   return (
     <Routes>
@@ -22,6 +23,7 @@ export default function IndexRoute() {
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />} />
       </Route>
+      <Route path="/*" element={<SellerRoute />} />
     </Routes>
   );
 }
