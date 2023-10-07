@@ -96,7 +96,7 @@ function Product() {
         />
         <div className="product-info">
           <div className="product-image">
-            <img src="nobg.png" width={"100%"} />
+            <img src="../nobg.png" width={"100%"} />
           </div>
           <div className="product-name">Solar Panel</div>
         </div>

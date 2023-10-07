@@ -8,9 +8,10 @@ function Card() {
     <>
       <CardContainer
         onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}>
+        onMouseLeave={() => setHovered(false)}
+      >
         <div className="img">
-          <img src="2.jpg" width={"100%"} />
+          <img src="../2.jpg" width={"100%"} />
         </div>
         <div className="details">
           <div>
@@ -26,7 +27,8 @@ function Card() {
           </div>
           <motion.div
             initial={{ y: 0, opacity: 0 }}
-            animate={{ y: isHovered ? 5 : 0, opacity: isHovered ? 1 : 0 }}>
+            animate={{ y: isHovered ? 5 : 0, opacity: isHovered ? 1 : 0 }}
+          >
             <div className="btn-cont">
               <button className="add">
                 Add to cart <ShoppingCartOutlined />

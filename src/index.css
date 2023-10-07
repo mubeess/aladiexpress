@@ -26,6 +26,7 @@
 body {
   margin: 0;
   display: flex;
+  padding: 0;
   flex-direction: column;
-  font-family: "Rubik", sans-serif; 
+  font-family: "Rubik", sans-serif;
 }
