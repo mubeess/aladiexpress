@@ -1,14 +1,14 @@
-import { Outlet } from "react-router-dom";
-import { SideMenu } from "../../seller/components/SideMenu";
-import { styled } from "styled-components";
+import { Outlet } from 'react-router-dom';
+import { SideMenu } from '../../seller/components/SideMenu';
+import { styled } from 'styled-components';
 import {
   BellOutlined,
   CloseOutlined,
   DownOutlined,
   MenuOutlined,
-} from "@ant-design/icons";
-import { Drawer } from "antd";
-import { useState } from "react";
+} from '@ant-design/icons';
+import { Drawer } from 'antd';
+import { useState } from 'react';
 
 function SellerLayout() {
   const [open, setOpen] = useState(false);
@@ -33,13 +33,11 @@ function SellerLayout() {
       </aside>
       <section>
         <Drawer
-          placement={"left"}
+          placement={'left'}
           closable={false}
           onClose={() => setOpen(!open)}
           open={open}
-          key={"left"}
-          style={{ width: "50%" }}
-        >
+          key={'left'}>
           <SideMenu />
         </Drawer>
       </section>
@@ -60,9 +58,9 @@ export const Cont = styled.div`
   background: #f4f4f4;
   main {
     margin: 5px;
-
-    width: 98%;
+    width: 95%;
     margin: auto;
+    min-height: 95%;
   }
   header {
     grid-column: 2/4;
@@ -112,7 +110,6 @@ export const Cont = styled.div`
     header {
       grid-column: 1/2;
       justify-content: space-between;
-
       .menuIcon {
         display: flex;
         margin: 10px;
